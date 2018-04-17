@@ -5,8 +5,6 @@ import styles from './Counter.css';
 
 type Props = {
   increment: () => void,
-  incrementIfOdd: () => void,
-  incrementAsync: () => void,
   decrement: () => void,
     movieList: array
 };
@@ -16,7 +14,7 @@ export default class MovieList extends Component<Props> {
 
   render() {
     const {
-      increment, incrementIfOdd, incrementAsync, decrement, movieList
+      increment, decrement, movieList
     } = this.props;
 
     const listItems = movieList.map((movie) =>
@@ -32,15 +30,13 @@ export default class MovieList extends Component<Props> {
         <div>
           <ul>{listItems}</ul>
         </div>
-        <div className={styles.btnGroup}>
+        <div>
           <button className={styles.btn} onClick={increment} data-tclass="btn">
             <i className="fa fa-plus" />
           </button>
           <button className={styles.btn} onClick={decrement} data-tclass="btn">
             <i className="fa fa-minus" />
           </button>
-          <button className={styles.btn} onClick={incrementIfOdd} data-tclass="btn">odd</button>
-          <button className={styles.btn} onClick={() => incrementAsync()} data-tclass="btn">async</button>
         </div>
       </div>
     );
