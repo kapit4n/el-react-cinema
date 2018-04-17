@@ -24,7 +24,7 @@ export function incrementIfOdd() {
   return (dispatch: (action: actionType) => void, getState: () => movieStateType) => {
     const { movie } = getState();
 
-    if (movie % 2 === 0) {
+    if (movie.name % 2 === 0) {
       return;
     }
 

@@ -1,21 +1,27 @@
 // @flow
 import { INCREMENT_MOVIE, DECREMENT_MOVIE } from '../actions/movie';
 
-export type counterStateType = {
-  +movie: number
+const initialState = {
+  movie: {
+    name: 0,
+    detail: 'DETAIL'
+  }
 };
 
 type actionType = {
   +type: string
 };
 
-export default function movie(state: number = 0, action: actionType) {
+export default function movie(state = initialState, action: actionType) {
+  console.log('Call movie() from reducers 1');
+  console.log(state);
+  console.log('Call movie() from reducers 2');
   switch (action.type) {
     case INCREMENT_MOVIE:
-      return state + 1;
+      return { name: state.name + 1, detail: 'INCREMENT' };
     case DECREMENT_MOVIE:
-      return state - 1;
+      return { name: state.name - 1, detail: 'DECREMENT' };
     default:
-      return state;
+      return { name: 0, detail: 'DEFAULT' };
   }
 }

@@ -4,6 +4,9 @@ import Movie from '../components/Movie';
 import * as MovieActions from '../actions/movie';
 
 function mapStateToProps(state) {
+  console.log('state');
+  console.log(state);
+
   return {
     movie: state.movie
   };
