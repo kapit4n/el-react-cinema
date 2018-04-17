@@ -1,19 +1,19 @@
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import Movie from '../components/Movie';
-import * as MovieActions from '../actions/movie';
+import MovieList from '../components/MovieList';
+import * as MovieListActions from '../actions/movielist';
 
 function mapStateToProps(state) {
   console.log('state');
   console.log(state);
 
   return {
-    movie: state.movie
+    movieList: state.movieList
   };
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators(MovieActions, dispatch);
+  return bindActionCreators(MovieListActions, dispatch);
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Movie);
+export default connect(mapStateToProps, mapDispatchToProps)(MovieList);
