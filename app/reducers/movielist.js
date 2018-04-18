@@ -2,9 +2,21 @@
 import { INCREMENT_MOVIELIST, DECREMENT_MOVIELIST } from '../actions/movielist';
 
 const initialState = [{
-  name: 'Movie 1',
-  detail: 'Detail'
-}];
+  name: 'Steven Jobs',
+  detail: 'Detail',
+  img: 'movie_jobs.jpg'
+},
+{
+  name: 'Monster Trucks',
+  detail: 'Detail',
+  img: 'movie_monster_trucks.jpg'
+},
+{
+  name: 'Silicon Valley',
+  detail: 'Detail',
+  img: 'movie_sillicon_valley.jpg'
+},
+];
 
 type actionType = {
   +type: string

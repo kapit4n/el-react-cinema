@@ -6,7 +6,7 @@ import styles from './Counter.css';
 type Props = {
   increment: () => void,
   decrement: () => void,
-    movieList: array
+  movieList: array
 };
 
 export default class MovieList extends Component<Props> {
@@ -16,9 +16,16 @@ export default class MovieList extends Component<Props> {
     const {
       increment, decrement, movieList
     } = this.props;
-
+    console.log('Displaying props');
+    console.log(this.props);
     const listItems = movieList.map((movie) =>
-      <li>{movie.name}</li>);
+      <div className="card" key={movie.name}>
+        <img className="card-img-top" height={200} src="./assets/movie_jobs.jpg" alt="Card image cap" />
+        <div className="card-body">
+          <h5 className="card-title">{movie.name}</h5>
+          <p className="card-text">{movie.detail}</p>
+        </div>
+      </div>);
 
     return (
       <div>
