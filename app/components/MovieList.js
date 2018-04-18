@@ -20,15 +20,23 @@ export default class MovieList extends Component<Props> {
     console.log(this.props);
     const listItems = movieList.map((movie) =>
       <div className="card" key={movie.name}>
-        <img className="card-img-top" height={200} src="./assets/movie_jobs.jpg" alt="Card image cap" />
+        <img className="card-img-top" height={100} src={"./assets/" + movie.img} />
         <div className="card-body">
-          <h5 className="card-title">{movie.name}</h5>
-          <p className="card-text">{movie.detail}</p>
+          <h5 className="card-title">
+          {movie.name}  
+          <Link to={"/movie"}>
+              <i className="fa fa-folder-open fa-2x" />
+          </Link>
+          </h5>
+          <p className="card-text">
+            {movie.detail}
+          </p>
+          
         </div>
       </div>);
 
-    return (
-      <div>
+return (
+      <div className="container">
         <div className={styles.backButton} data-tid="backButton">
           <Link to="/">
             <i className="fa fa-arrow-left fa-3x" />

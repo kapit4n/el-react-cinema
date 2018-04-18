@@ -4,10 +4,6 @@ import { Link } from 'react-router-dom';
 import styles from './Counter.css';
 
 type Props = {
-  increment: () => void,
-  incrementIfOdd: () => void,
-  incrementAsync: () => void,
-  decrement: () => void,
   movie: object
 };
 
@@ -16,28 +12,23 @@ export default class Movie extends Component<Props> {
 
   render() {
     const {
-      increment, incrementIfOdd, incrementAsync, decrement, movie
+      movie
     } = this.props;
     return (
-      <div>
+      <div className="container">
         <div className={styles.backButton} data-tid="backButton">
-          <Link to="/">
+          <Link to="/movies">
             <i className="fa fa-arrow-left fa-3x" />
           </Link>
         </div>
-        <div className={`counter ${styles.counter}`} data-tid="counter">
-          {movie.name}<br />
-          {movie.detail}
-        </div>
-        <div className={styles.btnGroup}>
-          <button className={styles.btn} onClick={increment} data-tclass="btn">
-            <i className="fa fa-plus" />
-          </button>
-          <button className={styles.btn} onClick={decrement} data-tclass="btn">
-            <i className="fa fa-minus" />
-          </button>
-          <button className={styles.btn} onClick={incrementIfOdd} data-tclass="btn">odd</button>
-          <button className={styles.btn} onClick={() => incrementAsync()} data-tclass="btn">async</button>
+        <div className="card" key={movie.name}>
+          <img className="card-img-top" height={100} src={`./assets/${movie.img}`} />
+          <div className="card-body">
+            <h5 className="card-title">{movie.name}</h5>
+            <p className="card-text">
+              {movie.detail}
+            </p>
+          </div>
         </div>
       </div>
     );

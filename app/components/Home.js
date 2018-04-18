@@ -11,14 +11,12 @@ export default class Home extends Component<Props> {
   render() {
     return (
       <div>
-        <div className={styles.container} data-tid="container">
+        <div className="container" data-tid="container">
           <div className="vertical-menu">
-            <a href="#" className="active">Home</a>
-            <Link to="/counter">Counter</Link>
-            <Link to="/movies">Movie List</Link>
+            <a href="#" className="active">Home</a>/
+            <Link to="/counter">Counter</Link>/
+            <Link to="/movies">Movies</Link>
           </div>
-          <h2>Home</h2>
-          <Link to="/counter">to Counter</Link>
         </div>
       </div>
     );

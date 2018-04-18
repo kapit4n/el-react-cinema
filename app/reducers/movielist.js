@@ -2,16 +2,19 @@
 import { INCREMENT_MOVIELIST, DECREMENT_MOVIELIST } from '../actions/movielist';
 
 const initialState = [{
+  id: 1,
   name: 'Steven Jobs',
   detail: 'Detail',
   img: 'movie_jobs.jpg'
 },
 {
+  id: 2,
   name: 'Monster Trucks',
   detail: 'Detail',
   img: 'movie_monster_trucks.jpg'
 },
 {
+  id: 3,
   name: 'Silicon Valley',
   detail: 'Detail',
   img: 'movie_sillicon_valley.jpg'
