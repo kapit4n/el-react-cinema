@@ -19,7 +19,7 @@ export default class MovieList extends Component<Props> {
     const listItems = movieList.map((movie) =>
     <li key={movie.name}>
       <div className="card">
-        <img className="card-img-top" height={100} src={`./assets/${movie.img}`} alt="" />
+          <img className="card-img-top" style={{ width: '30%', height: '35%'}} src={`./assets/${movie.img}`} alt="" />
         <div className="card-body">
           <h5 className="card-title">
           {movie.name}  
@@ -37,7 +37,7 @@ export default class MovieList extends Component<Props> {
 
     return (
       <div className="container">
-        <div className={styles.backButton} data-tid="backButton">
+        <div className="btn">
           <Link to="/">
             <i className="fa fa-arrow-left fa-3x" />
           </Link>
@@ -46,10 +46,10 @@ export default class MovieList extends Component<Props> {
           <ul>{listItems}</ul>
         </div>
         <div>
-          <button className={styles.btn} onClick={increment} data-tclass="btn">
+          <button className="btn" onClick={increment}>
             <i className="fa fa-plus" />
           </button>
-          <button className={styles.btn} onClick={decrement} data-tclass="btn">
+          <button className="btn" onClick={decrement}>
             <i className="fa fa-minus" />
           </button>
         </div>
