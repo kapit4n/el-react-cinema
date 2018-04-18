@@ -1,6 +1,4 @@
 // @flow
-import { INCREMENT_MOVIELIST, DECREMENT_MOVIELIST } from '../actions/movielist';
-
 const initialState = [{
   id: 1,
   name: 'Steven Jobs',
@@ -25,12 +23,10 @@ type actionType = {
   +type: string
 };
 
-export default function movieList(state = initialState, action: actionType) {
+export default function favMovies(state = initialState, action: actionType) {
+  console.log("favMovies");
+  console.log(state);
   switch (action.type) {
-    case INCREMENT_MOVIELIST:
-      return state.concat({ name: 'New Movie Incremenet', detail: 'detail Movie' });
-    case DECREMENT_MOVIELIST:
-      return state.slice(0, state.length - 1);
     default:
       return state;
   }

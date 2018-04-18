@@ -14,6 +14,7 @@ export default class Movie extends Component<Props> {
     const {
       movie
     } = this.props;
+
     return (
       <div className="container">
         <div className={styles.backButton} data-tid="backButton">
@@ -22,7 +23,7 @@ export default class Movie extends Component<Props> {
           </Link>
         </div>
         <div className="card" key={movie.name}>
-          <img className="card-img-top" height={100} src={`./assets/${movie.img}`} />
+          <img className="card-img-top" height={100} src={`./assets/${movie.img}`} alt="" />
           <div className="card-body">
             <h5 className="card-title">{movie.name}</h5>
             <p className="card-text">

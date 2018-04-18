@@ -16,11 +16,10 @@ export default class MovieList extends Component<Props> {
     const {
       increment, decrement, movieList
     } = this.props;
-    console.log('Displaying props');
-    console.log(this.props);
     const listItems = movieList.map((movie) =>
-      <div className="card" key={movie.name}>
-        <img className="card-img-top" height={100} src={"./assets/" + movie.img} />
+    <li key={movie.name}>
+      <div className="card">
+        <img className="card-img-top" height={100} src={`./assets/${movie.img}`} alt="" />
         <div className="card-body">
           <h5 className="card-title">
           {movie.name}  
@@ -33,9 +32,10 @@ export default class MovieList extends Component<Props> {
           </p>
           
         </div>
-      </div>);
+      </div>
+    </li>);
 
-return (
+    return (
       <div className="container">
         <div className={styles.backButton} data-tid="backButton">
           <Link to="/">

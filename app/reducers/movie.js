@@ -11,9 +11,6 @@ type actionType = {
 };
 
 export default function movie(state = initialState, action: actionType) {
-  console.log('Call movie() from reducers 1');
-  console.log(state);
-  console.log('Call movie() from reducers 2');
   switch (action.type) {
     default:
       return state;
