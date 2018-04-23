@@ -1,7 +1,7 @@
 // @flow
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import styles from './Counter.css';
+import MovieView from './MovieView';
 
 type Props = {
   increment: () => void,
@@ -16,24 +16,7 @@ export default class MovieList extends Component<Props> {
     const {
       increment, decrement, movieList
     } = this.props;
-    const listItems = movieList.map((movie) =>
-    <li key={movie.name}>
-      <div className="card">
-          <img className="card-img-top" style={{ width: '30%', height: '35%'}} src={`./assets/${movie.img}`} alt="" />
-        <div className="card-body">
-          <h5 className="card-title">
-          {movie.name}  
-          <Link to={"/movie"}>
-              <i className="fa fa-folder-open fa-2x" />
-          </Link>
-          </h5>
-          <p className="card-text">
-            {movie.detail}
-          </p>
-          
-        </div>
-      </div>
-    </li>);
+    const listItems = movieList.map((movie) => <MovieView movie={movie} />);
 
     return (
       <div className="container">

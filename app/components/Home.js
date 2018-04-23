@@ -1,6 +1,7 @@
 // @flow
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import MovieView from '../components/MovieView';
 
 type Props = {
   favMovies: array
@@ -15,8 +16,7 @@ export default class Home extends Component<Props> {
       favMovies
     } = this.props;
 
-    const listItems = favMovies.map((movie) =>
-      <li className="card" key={movie.id}>{movie.name}</li>);
+    const listItems = favMovies.map((movie) => <MovieView movie={movie} />);
 
     return (
       <div>
