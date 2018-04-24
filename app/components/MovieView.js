@@ -15,7 +15,7 @@ export default class MovieView extends Component<Props> {
     } = this.props;
 
     return (
-      <li key={movie.id}>
+      <li>
         <div className="card">
           <img className="card-img-top" style={{ width: '30%', height: '35%' }} src={`./assets/${movie.img}`} alt="" />
           <div className="card-body">
@@ -25,9 +25,6 @@ export default class MovieView extends Component<Props> {
               </Link>
               {movie.name}
             </h5>
-            <p className="card-text">
-              {movie.detail}
-            </p>
           </div>
         </div>
       </li>

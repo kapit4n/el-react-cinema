@@ -7,7 +7,6 @@ type Props = {
   favMovies: array
 };
 
-
 export default class Home extends Component<Props> {
   props: Props;
 
@@ -16,7 +15,7 @@ export default class Home extends Component<Props> {
       favMovies
     } = this.props;
 
-    const listItems = favMovies.map((movie) => <MovieView movie={movie} />);
+    const listItems = favMovies.map((movie) => <MovieView key={movie.id} movie={movie} />);
 
     return (
       <div>

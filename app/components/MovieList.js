@@ -16,7 +16,7 @@ export default class MovieList extends Component<Props> {
     const {
       increment, decrement, movieList
     } = this.props;
-    const listItems = movieList.map((movie) => <MovieView movie={movie} />);
+    const listItems = movieList.map((movie) => <MovieView key={movie.id} movie={movie} />);
 
     return (
       <div className="container">
