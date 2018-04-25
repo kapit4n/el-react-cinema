@@ -14,20 +14,29 @@ export default class MovieView extends Component<Props> {
       movie
     } = this.props;
 
+    const rows = [];
+    let i = 0;
+    const len = movie.stars;
+    while (i < len) {
+      rows.push(i);
+      i += 1;
+    }
+
     return (
-      <li>
-        <div className="card">
-          <img className="card-img-top" style={{ width: '30%', height: '35%' }} src={`./assets/${movie.img}`} alt="" />
+      <div className="col-sm-4">
+        <div className="card" style={{ width: '18rem' }}>
+          <img className="card-img-top" src={`./assets/${movie.img}`} alt="" />
           <div className="card-body">
             <h5 className="card-title">
               <Link to="/movie">
                 <i className="fa fa-folder-open fa-x" />
               </Link>
-              {movie.name}
+              {movie.name} <br />
+              {rows.map((ii) => <i className="fa fa-star" aria-hidden="true" key={ii} />)}
             </h5>
           </div>
         </div>
-      </li>
+      </div>
     );
   }
 }

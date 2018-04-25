@@ -24,8 +24,8 @@ export default class Home extends Component<Props> {
             <a href="#" className="active">Home</a>/
             <Link to="/movies">All Movies</Link>
           </div>
-          <div>
-            <ul>{listItems}</ul>
+          <div className="row">
+            {listItems}
           </div>
         </div>
       </div>

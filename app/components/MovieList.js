@@ -25,8 +25,8 @@ export default class MovieList extends Component<Props> {
             <i className="fa fa-arrow-left fa-3x" />
           </Link>
         </div>
-        <div>
-          <ul>{listItems}</ul>
+        <div className="row">
+          {listItems}
         </div>
         <div>
           <button className="btn" onClick={increment}>

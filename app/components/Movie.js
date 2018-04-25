@@ -14,6 +14,14 @@ export default class Movie extends Component<Props> {
       movie
     } = this.props;
 
+    const rows = [];
+    let i = 0;
+    const len = movie.stars;
+    while (i < len) {
+      rows.push(i);
+      i += 1;
+    }
+
     return (
       <div className="container">
         <div className="btn">
@@ -21,13 +29,22 @@ export default class Movie extends Component<Props> {
             <i className="fa fa-arrow-left fa-2x" />
           </Link>
         </div>
-        <div className="card" key={movie.name}>
-          <img className="card-img-top" style={{ width: '30%', height: '35%' }} src={`./assets/${movie.img}`} alt="" />
-          <div className="card-body">
-            <h5 className="card-title">{movie.name}</h5>
-            <p className="card-text">
-              {movie.detail}
-            </p>
+        <div className="card">
+          <div className="row">
+            <div className="col-sm-4">
+              <img className="card-img-top" src={`./assets/${movie.img}`} alt="" />
+            </div>
+            <div className="col-sm-8">
+              <div className="card-body">
+                <h5 className="card-title">
+                  {movie.name}<br />
+                  {rows.map((ii) => <i className="fa fa-star" aria-hidden="true" key={ii} />)}
+                </h5>
+                <p className="card-text">
+                  {movie.detail}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

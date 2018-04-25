@@ -5,19 +5,36 @@ const initialState = [{
   id: 1,
   name: 'Steven Jobs',
   detail: 'Detail',
-  img: 'movie_jobs.jpg'
+  img: 'movie_jobs.jpg',
+  stars: 1
 },
 {
   id: 2,
   name: 'Monster Trucks',
   detail: 'Detail',
-  img: 'movie_monster_trucks.jpg'
+  img: 'movie_monster_trucks.jpg',
+  stars: 5
 },
 {
   id: 3,
   name: 'Silicon Valley',
   detail: 'Detail',
-  img: 'movie_sillicon_valley.jpg'
+  img: 'movie_pirates_sillicon_valley.png',
+  stars: 3
+},
+{
+  id: 4,
+  name: 'The Cat Returns',
+  detail: 'Detail',
+  img: 'movie_the_cat_returns.jpg',
+  stars: 2
+},
+{
+  id: 5,
+  name: 'Cobra Kai',
+  detail: 'Detail',
+  img: 'movie_cobra_kai.jpg',
+  stars: 4
 },
 ];
 

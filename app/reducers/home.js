@@ -3,13 +3,15 @@ const initialState = [{
   id: 1,
   name: 'Steven Jobs',
   detail: 'Detail',
-  img: 'movie_jobs.jpg'
+  img: 'movie_jobs.jpg',
+  stars: 5
 },
 {
   id: 2,
   name: 'Monster Trucks',
   detail: 'Detail',
-  img: 'movie_monster_trucks.jpg'
+  img: 'movie_monster_trucks.jpg',
+  stars: 3
 },
 ];
 
