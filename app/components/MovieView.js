@@ -21,7 +21,7 @@ export default class MovieView extends Component<Props> {
       rows.push(i);
       i += 1;
     }
-
+    console.log(movie);
     return (
       <div className="col-sm-4">
         <div className="card" style={{ width: '18rem' }}>
@@ -32,7 +32,8 @@ export default class MovieView extends Component<Props> {
                 <i className="fa fa-folder-open fa-x" />
               </Link>
               {movie.name} <br />
-              {rows.map((ii) => <i className="fa fa-star" aria-hidden="true" key={ii} />)}
+              {rows.map((ii) => <i className="fa fa-star" aria-hidden="true" key={ii} />)} <br />
+              {movie.times.map((ti) => <span className="badge badge-secondary" key={ti} >{ti}</span>)}
             </h5>
           </div>
         </div>

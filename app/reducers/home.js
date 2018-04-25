@@ -4,14 +4,24 @@ const initialState = [{
   name: 'Steven Jobs',
   detail: 'Detail',
   img: 'movie_jobs.jpg',
-  stars: 5
+  stars: 5,
+  times: [
+    '12:34PM',
+    '4:34PM'
+  ]
 },
 {
   id: 2,
   name: 'Monster Trucks',
   detail: 'Detail',
   img: 'movie_monster_trucks.jpg',
-  stars: 3
+  stars: 3,
+  times: [
+    '12:34PM',
+    '1:34PM',
+    '5:34PM',
+    '8:34PM'
+  ]
 },
 ];
 
