@@ -21,14 +21,13 @@ export default class MovieView extends Component<Props> {
       rows.push(i);
       i += 1;
     }
-    console.log(movie);
     return (
       <div className="col-sm-4">
         <div className="card" style={{ width: '18rem' }}>
           <img className="card-img-top" src={`./assets/${movie.img}`} alt="" />
           <div className="card-body">
             <h5 className="card-title">
-              <Link to="/movie">
+              <Link to={`/movie/${movie.id}`}>
                 <i className="fa fa-folder-open fa-x" />
               </Link>
               {movie.name} <br />

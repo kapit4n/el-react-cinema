@@ -10,7 +10,7 @@ export default () => (
   <App>
     <Switch>
       <Route path="/movies" component={MovieList} />
-      <Route path="/movie" component={Movie} />
+      <Route path="/movie/:id" component={Movie} />
       <Route path="/" component={HomePage} />
     </Switch>
   </App>

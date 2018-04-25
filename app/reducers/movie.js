@@ -1,3 +1,5 @@
+import { SHOW_MOVIE } from '../actions/movie';
+const movieList = require('../api/movies.json');
 // @flow
 const initialState = {
   id: 1,
@@ -7,12 +9,25 @@ const initialState = {
   stars: 4
 };
 
+
 type actionType = {
-  +type: string
+  type: string
 };
 
 export default function movie(state = initialState, action: actionType) {
   switch (action.type) {
+    case '@@router/LOCATION_CHANGE':
+      if (action.payload.pathname === '/') {
+        return state;
+      } else if (action.payload.pathname.split('/')[1] === 'movie') {
+        const id = parseInt(action.payload.pathname.split('/')[2], 0);
+        const result = movieList.filter(m => m.id === id);
+        if (result.length > 0) {
+          return result[0];
+        }
+        return state;
+      }
+      return state;
     default:
       return state;
   }
