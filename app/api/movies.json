@@ -1,58 +1,58 @@
 [
-    {
-  "id": 1,
-  "name": "Steven Jobs",
-  "detail": "Detail",
-  "img": "movie_jobs.jpg",
-  "stars": 1,
-  "times": [
-    "10: 34PM"
-        ]
-    },
-{
-  "id": 2,
-  "name": "Monster Trucks",
-  "detail": "Detail",
-  "img": "movie_monster_trucks.jpg",
-  "stars": 5,
-  "times": [
-    "12: 34PM",
-    "1: 34PM",
-    "4: 34PM"
-        ]
-    },
-    {
-  "id": 3,
-  "name": "Silicon Valley",
-  "detail": "Detail",
-  "img": "movie_pirates_sillicon_valley.png",
-  "stars": 3,
-  "times": [
-    "4: 34PM"
-        ]
-    },
-    {
-  "id": 4,
-  "name": "The Cat Returns",
-  "detail": "Detail",
-  "img": "movie_the_cat_returns.jpg",
-  "stars": 2,
-  "times": [
-    "8: 34AM",
-    "12: 34PM",
-    "1: 34PM",
-    "4: 34PM"
-        ]
-    },
-    {
-  "id": 5,
-  "name": "Cobra Kai",
-  "detail": "Detail",
-  "img": "movie_cobra_kai.jpg",
-  "stars": 4,
-  "times": [
-    "1: 34PM",
-    "4: 34PM"
-        ]
-    }
+  {
+    "id": 1,
+    "name": "Steven Jobs",
+    "detail": "obs is a 2013 American biographical drama film based on the life of Steve Jobs, from 1974 while a student at Reed College to the introduction of the iPod in 2001.[3] It is directed by Joshua Michael Stern, written by Matt Whiteley, and produced by Stern and Mark Hulme. Steve Jobs is portrayed by Ashton Kutcher, with Josh Gad as Apple Computer's co-founder Steve Wozniak. Jobs was chosen to close the 2013 Sundance Film Festival",
+    "img": "movie_jobs.jpg",
+    "stars": 1,
+    "times": [
+      "10: 34PM"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Monster Trucks",
+    "detail": "Monster Trucks is a 2016 American comedy film produced by Paramount Animation, Nickelodeon Movies and Disruption Entertainment for Paramount Pictures. It was directed by Chris Wedge and written by Derek Connolly, from a story by Jonathan Aibel, Glenn Berger and Matthew Robinson.[4] The film stars Lucas Till, Jane Levy, Amy Ryan, Rob Lowe, Danny Glover, Barry Pepper and Holt McCallany, and follows a high schooler who finds an escaped monster living in his truck",
+    "img": "movie_monster_trucks.jpg",
+    "stars": 5,
+    "times": [
+      "12: 34PM",
+      "1: 34PM",
+      "4: 34PM"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Silicon Valley",
+    "detail": "Pirates of Silicon Valley is an original 1999 American made for television biographical drama film, directed by Martyn Burke and starring Noah Wyle as Steve Jobs and Anthony Michael Hall as Bill Gates. Spanning the years 1971–1997 and based on Paul Freiberger and Michael Swaine's 1984 book Fire in the Valley: The Making of the Personal Computer, it explores the impact of the rivalry between Jobs (Apple Computer) and Gates (Microsoft) on the development of the personal computer",
+    "img": "movie_pirates_sillicon_valley.png",
+    "stars": 3,
+    "times": [
+      "4: 34PM"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "The Cat Returns",
+    "detail": "The Cat Returns (Japanese: 猫の恩返し Hepburn: Neko no Ongaeshi, lit. The Cat's Repayment) is a 2002 Japanese animated fantasy film directed by Hiroyuki Morita, produced by Toshio Suzuki and Nozomu Takahashi, written by Reiko Yoshida, based on The Cat Returns by Aoi Hiiragi with music by Yuji Nomi, animated by Studio Ghibli for Tokuma Shoten, Nippon Television Network, Hakuhodo, Buena Vista Home Entertainment, Mitsubishi and Toho and distributed by the latter company. It stars Chizuru Ikewaki, Yoshihiko Hakamada, Tetsu Watanabe, Yosuke Saito, Aki Maeda and Tetsurō Tamba. A spin-off of Whisper of the Heart, it was theatrically released in Japan on July 20, 2002 through Toho and in 2005 in the United States through Walt Disney Home Entertainment.[3] It received an Excellence Prize at the 2002 Japan Media Arts Festival. GKIDS re-issued the movie on Blu-ray & DVD on January 16, 2018 under a new deal with Studio Ghibli",
+    "img": "movie_the_cat_returns.jpg",
+    "stars": 2,
+    "times": [
+      "8: 34AM",
+      "12: 34PM",
+      "1: 34PM",
+      "4: 34PM"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Cobra Kai",
+    "detail": "Cobra Kai is an upcoming American comedy-drama web television series based on The Karate Kid film series created by Robert Mark Kamen. The television series takes place 34 years after the original film and follows the reopening of the Cobra Kai karate dojo by Johnny Lawrence and the rekindling of his old rivalry with Daniel LaRusso. The series was created by Jon Hurwitz, Hayden Schlossberg, and Josh Heald and stars William Zabka and Ralph Macchio, reprising their roles from the films. It is set to premiere on May 2, 2018 on YouTube Red",
+    "img": "movie_cobra_kai.jpg",
+    "stars": 4,
+    "times": [
+      "1: 34PM",
+      "4: 34PM"
+    ]
+  }
 ]

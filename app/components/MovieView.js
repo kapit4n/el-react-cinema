@@ -22,8 +22,8 @@ export default class MovieView extends Component<Props> {
       i += 1;
     }
     return (
-      <div className="col-sm-4">
-        <div className="card" style={{ width: '18rem' }}>
+      <div className="col-sm-3">
+        <div className="card">
           <img className="card-img-top" src={`./assets/${movie.img}`} alt="" />
           <div className="card-body">
             <h5 className="card-title">
