@@ -6,6 +6,7 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
+@import '~@devexpress/dx-react-grid-bootstrap4/dist/dx-react-grid-bootstrap4.css';
 
 body {
   position: relative;
