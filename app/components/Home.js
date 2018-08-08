@@ -1,7 +1,8 @@
 // @flow
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import MovieView from '../components/MovieView';
+import CustomNav from '../components/CustomNav';
+import SimpleSlider from '../components/SimpleSlider';
 
 type Props = {
   favMovies: array
@@ -20,13 +21,8 @@ export default class Home extends Component<Props> {
     return (
       <div>
         <div className="container" data-tid="container">
-          <div className="vertical-menu">
-            <a href="#" className="active">Home</a>/
-            <Link to="/movies">All Movies</Link>
-          </div>
-          <div className="row">
-            {listItems}
-          </div>
+          <CustomNav/>
+          <SimpleSlider movies={favMovies}/>
         </div>
       </div>
     );

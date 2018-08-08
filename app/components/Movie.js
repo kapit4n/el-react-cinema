@@ -26,7 +26,7 @@ export default class Movie extends Component<Props> {
       <div className="container">
         <div className="btn">
           <Link to="/movies">
-            <i className="fa fa-arrow-left fa-2x" />
+            <i className="fa fa-arrow-left fa-1x" />
           </Link>
         </div>
         <div className="card">
