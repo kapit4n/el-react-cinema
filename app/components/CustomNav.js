@@ -13,12 +13,13 @@ export default class CustomNav extends Component {
           <div className="navbar-nav">
             <a className="nav-item nav-link active" href="#">Home <span className="sr-only">(current)</span></a>
             <Link className="nav-item nav-link" to="/movies">All Movies</Link>
+            <Link className="nav-item nav-link" to="/movieGrid">Table</Link>
             <a className="nav-item nav-link" href="#">Pricing</a>
             <a className="nav-item nav-link disabled" href="#">Disabled</a>
           </div>
         </div>
       </nav>
-      );
+    );
   }
 }
 
