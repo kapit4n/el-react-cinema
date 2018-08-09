@@ -8,3 +8,10 @@
 
 ## Show Movie Info
 <img src="https://github.com/kapit4n/el-react-cinema/raw/master/mockups/el-cinema-show.png" alt="Drawing" width="100%"/>
+
+# INSTALL
+* cd projectPath
+* yarn
+
+# RUN
+* npm run dev
